@@ -23,6 +23,7 @@ angular.module('docs').controller('Login', function(Restangular, $scope, $rootSc
   // Login
   $scope.login = function() {
     User.login($scope.user).then(function() {
+    
       User.userInfo(true).then(function(data) {
         $rootScope.userInfo = data;
       });
