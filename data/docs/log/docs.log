@@ -311,3 +311,5 @@
 12 Mar 2025 15:30:25,998 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
 12 Mar 2025 15:30:26,016 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
 12 Mar 2025 15:30:41,589 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
+12 Mar 2025 15:34:53,952 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+12 Mar 2025 15:34:53,957 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 

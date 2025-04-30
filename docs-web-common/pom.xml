@@ -37,7 +37,7 @@
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
     </dependency>
-    
+
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
@@ -128,6 +128,49 @@
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.8.9</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>report</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>report</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
+
   </build>
+  <distributionManagement>
+    <site>
+      <id>local</id>
+      <url>file:${project.build.directory}/site</url>
+    </site>
+  </distributionManagement>
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.8.9</version>
+        <reportSets>
+          <reportSet>
+            <id>default</id>
+            <reports>
+              <report>report</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+    </plugins>
+  </reporting>
 </project>
