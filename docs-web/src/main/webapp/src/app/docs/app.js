@@ -417,7 +417,24 @@ angular.module('docs',
           controller: 'GroupProfile'
         }
       }
-    });
+    }).state('guestRegister', {
+    url: '/guest-register',
+    views: {
+      'page': {
+        templateUrl: 'partial/user/guest-register.html',
+        controller: 'GuestRegisterCtrl'
+      }
+    }
+  })
+      .state('userRequestList', {
+        url: '/admin/user-requests',
+        views: {
+          'page': {
+            templateUrl: 'partial/user/user-request-list.html',
+            controller: 'UserRequestListCtrl'
+          }
+        }
+      });
 
   // Configuring Restangular
   RestangularProvider.setBaseUrl('../api');

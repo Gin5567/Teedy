@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>User Registration Requests</h2>
+
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="req in requests">
+            <td>{{ req.name }}</td>
+            <td>{{ req.email }}</td>
+            <td>{{ req.status }}</td>
+            <td>
+                <button class="btn btn-success btn-sm" ng-click="approve(req)" ng-disabled="req.status === 'accepted'">Approve</button>
+                <button class="btn btn-danger btn-sm" ng-click="reject(req)" ng-disabled="req.status === 'rejected'">Reject</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

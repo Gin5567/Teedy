@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>Guest Account Registration</h2>
+
+    <form name="registerForm" ng-submit="submitRequest()" novalidate>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input id="name" type="text" ng-model="name" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input id="email" type="email" ng-model="email" class="form-control" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary" ng-disabled="registerForm.$invalid">Submit</button>
+    </form>
+
+    <div class="alert" ng-if="message" ng-class="{'alert-success': success, 'alert-danger': !success}">
+        {{ message }}
+    </div>
+</div>
