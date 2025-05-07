@@ -49,7 +49,7 @@ docker.image("${env.DOCKER_IMAGE}:${env.DOCKER_TAG}").push('latest')
                 }
                 }
                 // Running Docker container
-                        stage('Run containers') { 
+                        stage('Run containers') {
                             steps {
                                 script {
                 // stop then remove containers if exists
