@@ -5287,3 +5287,648 @@ Caused by: org.hibernate.PropertyValueException: not-null property references a 
 13 May 2025 11:01:29,200 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
 13 May 2025 11:13:11,690 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
 13 May 2025 11:13:11,691 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 12:34:43,951 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 12:34:43,953 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 12:34:43,953 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 12:34:44,800 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 12:34:44,804 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 12:34:44,804 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 12:34:44,804 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 12:34:46,435 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 12:34:46,465 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 12:34:46,564 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 12:34:46,571 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 12:34:46,573 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 12:34:46,656 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 12:34:46,657 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 12:35:06,141 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
+13 May 2025 12:35:16,300 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: ecf5a519-0cfc-4ba9-9bb0-39e9e9f266ce 
+13 May 2025 12:35:16,309 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=ecf5a519-0cfc-4ba9-9bb0-39e9e9f266ce, language=null} 
+13 May 2025 12:35:16,386 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 7 classes for FormatHandler 
+13 May 2025 12:35:16,938 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=ecf5a519-0cfc-4ba9-9bb0-39e9e9f266ce, name=DOCKER TOKEN.txt} 
+13 May 2025 12:35:16,942 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 4ms: ecf5a519-0cfc-4ba9-9bb0-39e9e9f266ce 
+13 May 2025 12:35:17,041 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: ecf5a519-0cfc-4ba9-9bb0-39e9e9f266ce 
+13 May 2025 12:35:46,763 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 98063d7b-d5fd-4bad-9cf1-be1d75a98b96 
+13 May 2025 12:35:46,766 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=98063d7b-d5fd-4bad-9cf1-be1d75a98b96, language=null} 
+13 May 2025 12:35:46,777 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:143) Format unhandled: text/markdown 
+13 May 2025 12:35:46,786 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 98063d7b-d5fd-4bad-9cf1-be1d75a98b96 
+13 May 2025 12:35:53,831 INFO com.sismics.docs.core.listener.async.FileDeletedAsyncListener.on(FileDeletedAsyncListener.java:36) File deleted event: FileDeletedAsyncEvent{fileId=98063d7b-d5fd-4bad-9cf1-be1d75a98b96, fileSize=142} 
+13 May 2025 12:35:54,294 INFO com.sismics.docs.core.listener.async.FileDeletedAsyncListener.on(FileDeletedAsyncListener.java:36) File deleted event: FileDeletedAsyncEvent{fileId=ecf5a519-0cfc-4ba9-9bb0-39e9e9f266ce, fileSize=36} 
+13 May 2025 12:49:53,161 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 12:49:53,167 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 12:55:44,607 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 12:55:44,609 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 12:55:44,609 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 12:55:45,270 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 12:55:45,274 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 12:55:45,274 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 12:55:45,274 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 12:55:46,602 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 12:55:46,626 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 12:55:46,685 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 12:55:46,689 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 12:55:46,691 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 12:55:46,747 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 12:55:46,748 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:21:15,665 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:21:15,666 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:21:45,443 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:21:45,444 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:21:45,445 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:21:46,251 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:21:46,254 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:21:46,255 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:21:46,255 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:21:47,619 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:21:47,646 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:21:47,725 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:21:47,730 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:21:47,732 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:21:47,815 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:21:47,821 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:23:10,845 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:23:10,846 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:23:19,194 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:23:19,196 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:23:19,197 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:23:19,847 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:23:19,850 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:23:19,850 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:23:19,853 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:23:21,246 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:23:21,269 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:23:21,343 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:23:21,346 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:23:21,347 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:23:21,408 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:23:21,409 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:23:32,329 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:23:32,329 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:24:02,042 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:24:02,045 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:24:02,046 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:24:02,668 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:24:02,670 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:24:02,670 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:24:02,673 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:24:03,927 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:24:03,950 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:24:04,005 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:24:04,009 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:24:04,011 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:24:04,069 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:24:04,070 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:28:08,814 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:28:08,816 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:28:34,971 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:28:34,972 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:28:34,973 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:28:35,573 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:28:35,576 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:28:35,577 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:28:35,578 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:28:36,787 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:28:36,810 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:28:36,868 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:28:36,872 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:28:36,873 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:28:36,927 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:28:36,928 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:30:14,988 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:30:14,996 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:30:20,698 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:30:20,700 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:30:20,701 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:30:21,313 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:30:21,316 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:30:21,316 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:30:21,317 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:30:22,540 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:30:22,564 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:30:22,641 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:30:22,645 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:30:22,647 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:30:22,713 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:30:22,715 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:32:48,638 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:32:48,639 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:33:16,920 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:33:16,922 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:33:16,922 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:33:17,564 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:33:17,567 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:33:17,567 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:33:17,569 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:33:18,864 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:33:18,887 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:33:18,949 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:33:18,953 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:33:18,954 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:33:19,011 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:33:19,015 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:36:58,383 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:36:58,384 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:37:06,621 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:37:06,623 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:37:06,623 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:37:07,220 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:37:07,223 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:37:07,224 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:37:07,225 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:37:08,595 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:37:08,627 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:37:08,690 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:37:08,693 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:37:08,694 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:37:08,759 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:37:08,762 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:37:19,885 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:37:19,887 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:37:47,756 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:37:47,757 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:37:47,758 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:37:48,392 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:37:48,396 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:37:48,396 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:37:48,397 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:37:49,710 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:37:49,732 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:37:49,809 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:37:49,813 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:37:49,814 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:37:49,873 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:37:49,874 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:38:45,619 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:38:45,620 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:38:51,843 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:38:51,845 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:38:51,846 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:38:52,470 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:38:52,473 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:38:52,473 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:38:52,484 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:38:53,794 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:38:53,819 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:38:53,890 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:38:53,895 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:38:53,896 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:38:53,963 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:38:53,964 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:39:19,062 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:39:19,063 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:39:23,581 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:39:23,583 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:39:23,587 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:39:24,308 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:39:24,312 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:39:24,312 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:39:24,313 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:39:25,667 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:39:25,690 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:39:25,773 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:39:25,777 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:39:25,778 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:39:25,848 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:39:25,850 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:40:33,137 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 29238481-d4e6-4776-be9c-e511512baa0d 
+13 May 2025 13:40:33,148 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=29238481-d4e6-4776-be9c-e511512baa0d, language=null} 
+13 May 2025 13:40:33,236 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 7 classes for FormatHandler 
+13 May 2025 13:40:33,849 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=29238481-d4e6-4776-be9c-e511512baa0d, name=choose.txt} 
+13 May 2025 13:40:33,850 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 0ms: 29238481-d4e6-4776-be9c-e511512baa0d 
+13 May 2025 13:40:33,948 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 29238481-d4e6-4776-be9c-e511512baa0d 
+13 May 2025 13:42:57,161 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:42:57,162 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:43:03,741 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:43:03,743 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:43:03,744 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:43:04,391 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:43:04,394 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:43:04,394 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:43:04,395 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:43:05,683 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:43:05,708 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:43:05,766 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:43:05,770 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:43:05,771 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:43:05,827 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:43:05,828 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:44:29,633 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:44:29,634 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:44:52,345 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:44:52,347 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:44:52,348 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:44:52,972 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:44:52,975 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:44:52,976 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:44:52,976 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:44:54,247 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:44:54,280 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:44:54,347 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:44:54,354 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:44:54,356 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:44:54,417 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:44:54,419 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:45:52,286 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:45:52,287 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:45:57,367 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:45:57,368 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:45:57,369 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:45:57,984 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:45:57,987 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:45:57,987 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:45:57,988 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:45:59,240 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:45:59,263 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:45:59,334 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:45:59,337 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:45:59,338 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:45:59,393 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:45:59,394 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:47:04,883 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:47:04,884 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:47:08,584 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:47:08,587 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:47:08,587 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:47:09,305 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:47:09,309 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:47:09,309 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:47:09,310 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:47:10,661 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:47:10,690 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:47:10,781 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:47:10,786 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:47:10,787 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:47:10,846 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:47:10,848 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:47:12,787 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:38) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 13:47:12,788 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:41) 🔐 Authentication successful 
+13 May 2025 13:47:12,791 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:45) 📄 Fetched document list, count = 0 
+13 May 2025 13:47:12,792 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:60) ✅ JSON response built successfully 
+13 May 2025 13:47:45,622 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:38) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 13:47:45,622 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:41) 🔐 Authentication successful 
+13 May 2025 13:47:45,623 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:45) 📄 Fetched document list, count = 0 
+13 May 2025 13:47:45,624 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:60) ✅ JSON response built successfully 
+13 May 2025 13:48:32,773 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:48:32,775 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:49:40,592 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:49:40,594 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:49:40,595 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:49:41,208 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:49:41,212 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:49:41,213 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:49:41,214 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:49:42,632 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:49:42,658 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:49:42,732 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:49:42,737 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:49:42,739 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:49:42,808 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:49:42,810 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:49:51,300 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
+13 May 2025 13:50:09,738 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=7b446f49-4496-41ce-9f7a-73a69b445b01} 
+13 May 2025 13:50:09,811 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 29238481-d4e6-4776-be9c-e511512baa0d 
+13 May 2025 13:50:09,817 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=29238481-d4e6-4776-be9c-e511512baa0d, language=eng} 
+13 May 2025 13:50:09,822 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=7b446f49-4496-41ce-9f7a-73a69b445b01} 
+13 May 2025 13:50:09,885 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 7 classes for FormatHandler 
+13 May 2025 13:50:10,422 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=29238481-d4e6-4776-be9c-e511512baa0d, name=choose.txt} 
+13 May 2025 13:50:10,423 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: 29238481-d4e6-4776-be9c-e511512baa0d 
+13 May 2025 13:50:10,440 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 29238481-d4e6-4776-be9c-e511512baa0d 
+13 May 2025 13:50:16,613 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:38) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 13:50:16,614 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:41) 🔐 Authentication successful 
+13 May 2025 13:50:16,620 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:45) 📄 Fetched document list, count = 1 
+13 May 2025 13:50:16,621 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: 123 
+13 May 2025 13:50:16,622 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:60) ✅ JSON response built successfully 
+13 May 2025 13:52:04,715 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:52:04,717 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:52:08,332 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:52:08,335 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:52:08,336 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:52:08,970 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:52:08,976 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:52:08,977 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:52:08,978 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:52:10,173 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:52:10,195 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:52:10,267 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:52:10,272 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:52:10,274 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:52:10,342 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:52:10,345 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:53:08,869 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:38) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 13:53:08,870 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:41) 🔐 Authentication successful 
+13 May 2025 13:53:08,874 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:45) 📄 Fetched document list, count = 1 
+13 May 2025 13:53:08,876 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: 123 
+13 May 2025 13:53:08,879 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:60) ✅ JSON response built successfully 
+13 May 2025 13:53:10,456 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:38) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 13:53:10,457 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:41) 🔐 Authentication successful 
+13 May 2025 13:53:10,458 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:45) 📄 Fetched document list, count = 1 
+13 May 2025 13:53:10,458 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: 123 
+13 May 2025 13:53:10,458 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:60) ✅ JSON response built successfully 
+13 May 2025 13:54:00,100 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:38) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 13:54:00,101 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:41) 🔐 Authentication successful 
+13 May 2025 13:54:00,102 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:45) 📄 Fetched document list, count = 1 
+13 May 2025 13:54:00,102 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: 123 
+13 May 2025 13:54:00,103 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:60) ✅ JSON response built successfully 
+13 May 2025 13:54:44,621 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:54:44,622 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:54:48,010 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:54:48,012 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:54:48,012 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:54:48,674 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:54:48,677 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:54:48,677 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:54:48,678 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:54:49,982 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:54:50,008 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:54:52,384 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:54:52,389 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:54:52,390 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:54:52,460 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:54:52,462 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:55:43,236 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:38) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 13:55:43,237 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:41) 🔐 Authentication successful 
+13 May 2025 13:55:43,239 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:45) 📄 Fetched document list, count = 1 
+13 May 2025 13:55:43,240 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: 123 
+13 May 2025 13:55:43,241 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:60) ✅ JSON response built successfully 
+13 May 2025 13:56:14,657 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 13:56:14,660 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 13:56:18,235 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:56:18,237 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 13:56:18,238 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 13:56:18,825 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 13:56:18,828 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 13:56:18,828 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 13:56:18,828 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 13:56:20,101 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 13:56:20,124 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 13:56:20,183 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 13:56:20,186 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 13:56:20,187 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 13:56:20,238 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 13:56:20,239 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 13:56:25,049 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:38) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 13:56:25,049 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:41) 🔐 Authentication successful 
+13 May 2025 13:56:25,054 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:45) 📄 Fetched document list, count = 1 
+13 May 2025 13:56:25,055 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: 123 
+13 May 2025 13:56:25,056 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:60) ✅ JSON response built successfully 
+13 May 2025 13:57:02,183 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
+13 May 2025 13:57:20,650 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=1d3e1657-daf1-4c3d-8f59-88035385df63} 
+13 May 2025 13:57:20,951 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: c4457393-5597-416a-877f-76c1cba5ae44 
+13 May 2025 13:57:20,958 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=c4457393-5597-416a-877f-76c1cba5ae44, language=eng} 
+13 May 2025 13:57:20,958 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=1d3e1657-daf1-4c3d-8f59-88035385df63} 
+13 May 2025 13:57:21,062 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 7 classes for FormatHandler 
+13 May 2025 13:57:21,507 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=c4457393-5597-416a-877f-76c1cba5ae44, name=DOCKER TOKEN.txt} 
+13 May 2025 13:57:21,507 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 0ms: c4457393-5597-416a-877f-76c1cba5ae44 
+13 May 2025 13:57:21,518 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: c4457393-5597-416a-877f-76c1cba5ae44 
+13 May 2025 13:57:34,997 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:38) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 13:57:34,998 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:41) 🔐 Authentication successful 
+13 May 2025 13:57:35,000 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:45) 📄 Fetched document list, count = 2 
+13 May 2025 13:57:35,001 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: 123 
+13 May 2025 13:57:35,002 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: test 
+13 May 2025 13:57:35,003 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:60) ✅ JSON response built successfully 
+13 May 2025 13:57:39,399 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:38) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 13:57:39,399 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:41) 🔐 Authentication successful 
+13 May 2025 13:57:39,400 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:45) 📄 Fetched document list, count = 2 
+13 May 2025 13:57:39,401 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: 123 
+13 May 2025 13:57:39,401 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: test 
+13 May 2025 13:57:39,401 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:60) ✅ JSON response built successfully 
+13 May 2025 14:02:08,644 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=2a12dc32-a998-4fa3-891c-ab16e46ea907} 
+13 May 2025 14:02:08,719 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 5ab91ebb-4bbe-43b2-84fa-2f87bb4f33d7 
+13 May 2025 14:02:08,724 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=5ab91ebb-4bbe-43b2-84fa-2f87bb4f33d7, language=eng} 
+13 May 2025 14:02:08,726 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=2a12dc32-a998-4fa3-891c-ab16e46ea907} 
+13 May 2025 14:02:08,912 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=5ab91ebb-4bbe-43b2-84fa-2f87bb4f33d7, name=jenkinsfile.txt} 
+13 May 2025 14:02:08,913 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: 5ab91ebb-4bbe-43b2-84fa-2f87bb4f33d7 
+13 May 2025 14:02:08,927 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 5ab91ebb-4bbe-43b2-84fa-2f87bb4f33d7 
+13 May 2025 14:02:26,855 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:38) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:02:26,856 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:41) 🔐 Authentication successful 
+13 May 2025 14:02:26,856 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:45) 📄 Fetched document list, count = 3 
+13 May 2025 14:02:26,857 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: 123 
+13 May 2025 14:02:26,858 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: test 
+13 May 2025 14:02:26,858 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: dsafdgzfxhhj 
+13 May 2025 14:02:26,858 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:60) ✅ JSON response built successfully 
+13 May 2025 14:03:31,394 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:38) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:03:31,395 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:41) 🔐 Authentication successful 
+13 May 2025 14:03:31,396 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:45) 📄 Fetched document list, count = 3 
+13 May 2025 14:03:31,396 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: 123 
+13 May 2025 14:03:31,397 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: test 
+13 May 2025 14:03:31,397 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: dsafdgzfxhhj 
+13 May 2025 14:03:31,397 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:60) ✅ JSON response built successfully 
+13 May 2025 14:03:35,985 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:38) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:03:35,986 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:41) 🔐 Authentication successful 
+13 May 2025 14:03:35,989 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:45) 📄 Fetched document list, count = 3 
+13 May 2025 14:03:35,990 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: 123 
+13 May 2025 14:03:35,990 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: test 
+13 May 2025 14:03:35,991 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: dsafdgzfxhhj 
+13 May 2025 14:03:35,991 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:60) ✅ JSON response built successfully 
+13 May 2025 14:03:55,682 INFO com.sismics.docs.core.listener.async.DocumentDeletedAsyncListener.on(DocumentDeletedAsyncListener.java:31) Document deleted event: DocumentDeletedAsyncEvent{documentId=2a12dc32-a998-4fa3-891c-ab16e46ea907} 
+13 May 2025 14:03:55,682 INFO com.sismics.docs.core.listener.async.FileDeletedAsyncListener.on(FileDeletedAsyncListener.java:36) File deleted event: FileDeletedAsyncEvent{fileId=5ab91ebb-4bbe-43b2-84fa-2f87bb4f33d7, fileSize=2820} 
+13 May 2025 14:04:04,019 INFO com.sismics.docs.core.listener.async.FileDeletedAsyncListener.on(FileDeletedAsyncListener.java:36) File deleted event: FileDeletedAsyncEvent{fileId=c4457393-5597-416a-877f-76c1cba5ae44, fileSize=36} 
+13 May 2025 14:04:04,019 INFO com.sismics.docs.core.listener.async.DocumentDeletedAsyncListener.on(DocumentDeletedAsyncListener.java:31) Document deleted event: DocumentDeletedAsyncEvent{documentId=1d3e1657-daf1-4c3d-8f59-88035385df63} 
+13 May 2025 14:04:14,950 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:38) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:04:14,951 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:41) 🔐 Authentication successful 
+13 May 2025 14:04:14,952 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:45) 📄 Fetched document list, count = 1 
+13 May 2025 14:04:14,952 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: 123 
+13 May 2025 14:04:14,953 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:60) ✅ JSON response built successfully 
+13 May 2025 14:04:21,496 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:38) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:04:21,496 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:41) 🔐 Authentication successful 
+13 May 2025 14:04:21,497 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:45) 📄 Fetched document list, count = 1 
+13 May 2025 14:04:21,497 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: 123 
+13 May 2025 14:04:21,498 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:60) ✅ JSON response built successfully 
+13 May 2025 14:04:34,235 INFO com.sismics.docs.core.listener.async.FileDeletedAsyncListener.on(FileDeletedAsyncListener.java:36) File deleted event: FileDeletedAsyncEvent{fileId=29238481-d4e6-4776-be9c-e511512baa0d, fileSize=1463} 
+13 May 2025 14:04:34,235 INFO com.sismics.docs.core.listener.async.DocumentDeletedAsyncListener.on(DocumentDeletedAsyncListener.java:31) Document deleted event: DocumentDeletedAsyncEvent{documentId=7b446f49-4496-41ce-9f7a-73a69b445b01} 
+13 May 2025 14:04:49,032 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=ec61f0aa-54e3-436f-976c-dd8a12a56fd3} 
+13 May 2025 14:04:53,793 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:38) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:04:53,793 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:41) 🔐 Authentication successful 
+13 May 2025 14:04:53,794 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:45) 📄 Fetched document list, count = 1 
+13 May 2025 14:04:53,795 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:51) 📄 Processing document: 124erq3t 
+13 May 2025 14:04:53,796 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:60) ✅ JSON response built successfully 
+13 May 2025 14:05:04,737 INFO com.sismics.docs.core.listener.async.DocumentDeletedAsyncListener.on(DocumentDeletedAsyncListener.java:31) Document deleted event: DocumentDeletedAsyncEvent{documentId=ec61f0aa-54e3-436f-976c-dd8a12a56fd3} 
+13 May 2025 14:05:09,873 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:38) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:05:09,874 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:41) 🔐 Authentication successful 
+13 May 2025 14:05:09,874 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:45) 📄 Fetched document list, count = 0 
+13 May 2025 14:05:09,875 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:60) ✅ JSON response built successfully 
+13 May 2025 14:06:49,185 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 14:06:49,186 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 14:07:36,024 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 14:07:36,026 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 14:07:36,027 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 14:07:39,274 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 14:07:39,277 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 14:07:39,277 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 14:07:39,277 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 14:07:40,689 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 14:07:40,724 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 14:07:40,812 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 14:07:40,816 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 14:07:40,817 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 14:07:40,884 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 14:07:40,887 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 14:07:59,386 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:07:59,387 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:07:59,390 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 0 
+13 May 2025 14:07:59,390 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:68) ✅ JSON response built successfully 
+13 May 2025 14:08:10,083 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
+13 May 2025 14:08:26,687 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=a6484299-b735-4522-bdc6-98db24ab593f} 
+13 May 2025 14:08:27,083 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 65c5419f-a31d-492b-b8b1-b95a7d434b51 
+13 May 2025 14:08:27,094 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=65c5419f-a31d-492b-b8b1-b95a7d434b51, language=eng} 
+13 May 2025 14:08:27,095 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=a6484299-b735-4522-bdc6-98db24ab593f} 
+13 May 2025 14:08:27,183 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 7 classes for FormatHandler 
+13 May 2025 14:08:27,192 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:143) Format unhandled: text/x-python 
+13 May 2025 14:08:27,199 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 65c5419f-a31d-492b-b8b1-b95a7d434b51 
+13 May 2025 14:08:38,220 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:08:38,221 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:08:38,222 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 1 
+13 May 2025 14:08:38,224 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:58) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:08:38,225 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:68) ✅ JSON response built successfully 
+13 May 2025 14:10:08,588 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 14:10:08,593 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 14:10:14,202 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 14:10:14,205 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 14:10:14,205 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 14:10:14,955 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 14:10:14,958 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 14:10:14,958 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 14:10:14,958 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 14:10:16,338 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 14:10:16,369 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 14:10:16,468 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 14:10:16,472 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 14:10:16,474 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 14:10:16,548 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 14:10:16,549 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 14:13:18,501 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:13:18,501 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:13:18,509 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 1 
+13 May 2025 14:13:18,512 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:13:18,513 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:69) ✅ JSON response built successfully 
+13 May 2025 14:15:08,010 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 14:15:08,011 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 14:15:12,901 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 14:15:12,903 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 14:15:12,904 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 14:15:13,546 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 14:15:13,549 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 14:15:13,550 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 14:15:13,551 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 14:15:14,803 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 14:15:14,826 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 14:15:14,884 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 14:15:14,887 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 14:15:14,888 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 14:15:14,941 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 14:15:14,943 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 14:15:45,734 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:15:45,735 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:15:45,738 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 1 
+13 May 2025 14:15:45,741 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:15:45,742 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:69) ✅ JSON response built successfully 
+13 May 2025 14:17:41,462 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:17:41,462 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:17:41,463 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 1 
+13 May 2025 14:17:41,464 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:17:41,465 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:69) ✅ JSON response built successfully 
+13 May 2025 14:17:46,254 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 14:17:46,255 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+13 May 2025 14:18:12,135 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 14:18:12,137 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:37) JDBC URL = jdbc:h2:file:/home/gin5567/teedy-db;IGNORECASE=TRUE 
+13 May 2025 14:18:12,138 INFO com.sismics.util.jpa.EMF.<clinit>(EMF.java:38) JDBC Driver = org.h2.Driver 
+13 May 2025 14:18:12,690 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+13 May 2025 14:18:12,693 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 31, new version is 31, executing database incremental update scripts 
+13 May 2025 14:18:12,694 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+13 May 2025 14:18:12,694 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:69) ✅ Configuring EntityManager from hibernate.properties 
+13 May 2025 14:18:13,917 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+13 May 2025 14:18:13,943 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+13 May 2025 14:18:14,012 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+13 May 2025 14:18:14,015 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+13 May 2025 14:18:14,017 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+13 May 2025 14:18:14,076 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+13 May 2025 14:18:14,077 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+13 May 2025 14:18:21,122 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:18:21,122 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:18:21,127 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 1 
+13 May 2025 14:18:21,131 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:18:21,132 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:69) ✅ JSON response built successfully 
+13 May 2025 14:18:50,871 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:18:50,871 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:18:50,872 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 1 
+13 May 2025 14:18:50,874 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:18:50,875 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:69) ✅ JSON response built successfully 
+13 May 2025 14:20:09,018 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:20:09,018 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:20:09,020 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 1 
+13 May 2025 14:20:09,021 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:20:09,022 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:69) ✅ JSON response built successfully 
+13 May 2025 14:20:46,193 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=742cef16-94e5-4e4f-9389-de6e01f75d52} 
+13 May 2025 14:20:48,394 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:20:48,394 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:20:48,396 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 2 
+13 May 2025 14:20:48,397 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:20:48,398 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 gfxrrefdxbghd uploaded by admin 
+13 May 2025 14:20:48,399 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:69) ✅ JSON response built successfully 
+13 May 2025 14:21:53,923 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:21:53,924 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:21:53,924 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 2 
+13 May 2025 14:21:53,925 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:21:53,926 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 gfxrrefdxbghd uploaded by admin 
+13 May 2025 14:21:53,927 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:69) ✅ JSON response built successfully 
+13 May 2025 14:22:16,408 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:22:16,408 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:22:16,408 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 2 
+13 May 2025 14:22:16,410 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:22:16,411 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 gfxrrefdxbghd uploaded by admin 
+13 May 2025 14:22:16,412 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:69) ✅ JSON response built successfully 
+13 May 2025 14:22:24,174 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:22:24,174 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:22:24,175 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 2 
+13 May 2025 14:22:24,176 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:22:24,176 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 gfxrrefdxbghd uploaded by admin 
+13 May 2025 14:22:24,177 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:69) ✅ JSON response built successfully 
+13 May 2025 14:24:02,535 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:24:02,535 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:24:02,536 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 2 
+13 May 2025 14:24:02,538 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:24:02,539 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 gfxrrefdxbghd uploaded by admin 
+13 May 2025 14:24:02,540 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:69) ✅ JSON response built successfully 
+13 May 2025 14:24:43,178 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:24:43,179 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:24:43,179 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 2 
+13 May 2025 14:24:43,181 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:24:43,182 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 gfxrrefdxbghd uploaded by admin 
+13 May 2025 14:24:43,182 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:69) ✅ JSON response built successfully 
+13 May 2025 14:25:47,484 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:25:47,484 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:25:47,485 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 2 
+13 May 2025 14:25:47,486 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:25:47,486 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 gfxrrefdxbghd uploaded by admin 
+13 May 2025 14:25:47,486 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:69) ✅ JSON response built successfully 
+13 May 2025 14:26:04,028 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=7c4f816d-b364-47f4-a337-a5fe7741182b} 
+13 May 2025 14:26:05,798 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:26:05,799 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:26:05,800 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 3 
+13 May 2025 14:26:05,801 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:26:05,802 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 gfxrrefdxbghd uploaded by admin 
+13 May 2025 14:26:05,802 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 adfhxgfzxbt uploaded by admin 
+13 May 2025 14:26:05,803 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:69) ✅ JSON response built successfully 
+13 May 2025 14:28:16,644 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:28:16,645 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:28:16,646 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 3 
+13 May 2025 14:28:16,647 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:28:16,648 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 gfxrrefdxbghd uploaded by admin 
+13 May 2025 14:28:16,648 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 adfhxgfzxbt uploaded by admin 
+13 May 2025 14:28:16,649 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:69) ✅ JSON response built successfully 
+13 May 2025 14:28:44,360 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:28:44,360 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:28:44,361 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 3 
+13 May 2025 14:28:44,361 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:28:44,362 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 gfxrrefdxbghd uploaded by admin 
+13 May 2025 14:28:44,363 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 adfhxgfzxbt uploaded by admin 
+13 May 2025 14:28:44,363 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:69) ✅ JSON response built successfully 
+13 May 2025 14:31:03,227 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:40) 📥 Received request to /admin/dashboard/activities 
+13 May 2025 14:31:03,227 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:43) 🔐 Authentication successful 
+13 May 2025 14:31:03,228 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:47) 📄 Fetched document list, count = 3 
+13 May 2025 14:31:03,229 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 JAAAAA uploaded by gin 
+13 May 2025 14:31:03,230 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 gfxrrefdxbghd uploaded by admin 
+13 May 2025 14:31:03,230 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:59) 📄 adfhxgfzxbt uploaded by admin 
+13 May 2025 14:31:03,231 INFO com.sismics.docs.rest.resource.AdminDashboardResource.getUserActivities(AdminDashboardResource.java:69) ✅ JSON response built successfully 
+13 May 2025 14:31:10,008 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+13 May 2025 14:31:10,009 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 

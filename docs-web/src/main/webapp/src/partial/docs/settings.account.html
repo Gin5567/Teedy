@@ -14,6 +14,10 @@
   </a>
 </div>
 
+<a ui-sref="userDashboard" class="btn btn-info" ng-if="isAdmin()">
+  <span class="fas fa-chart-bar"></span> User Dashboard
+</a>
+
 <form class="form-horizontal" name="editUserForm" novalidate autocomplete="off">
   <div class="form-group"
        ng-class="{ 'has-error': !editUserForm.accountPassword.$valid && editUserForm.$dirty,

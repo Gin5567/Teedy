@@ -249,4 +249,36 @@ public class DocumentDao {
         Query query = em.createNativeQuery("select count(d.DOC_ID_C) from T_DOCUMENT d where d.DOC_DELETEDATE_D is null");
         return ((Number) query.getSingleResult()).longValue();
     }
+
+    /**
+     * Returns all documents with basic metadata for admin dashboard.
+     *
+     * @return List of DocumentDto with id, title, creator, createDate
+     */
+    public List<DocumentDto> getAllDocumentSummaries() {
+        EntityManager em = ThreadLocalContext.get().getEntityManager();
+
+        // 原生 SQL：获取文档 ID、标题、创建时间和创建者用户名
+        String sql = "SELECT d.DOC_ID_C, d.DOC_TITLE_C, d.DOC_CREATEDATE_D, u.USE_USERNAME_C " +
+                    "FROM T_DOCUMENT d " +
+                    "JOIN T_USER u ON d.DOC_IDUSER_C = u.USE_ID_C " +
+                    "WHERE d.DOC_DELETEDATE_D IS NULL";
+
+        Query query = em.createNativeQuery(sql);
+        List<Object[]> resultList = query.getResultList();
+
+        List<DocumentDto> summaryList = new java.util.ArrayList<>();
+        for (Object[] row : resultList) {
+            DocumentDto dto = new DocumentDto();
+            int i = 0;
+            dto.setId((String) row[i++]);
+            dto.setTitle((String) row[i++]);
+            dto.setCreateTimestamp(((Timestamp) row[i++]).getTime());
+            dto.setCreator((String) row[i++]);
+            summaryList.add(dto);
+        }
+
+        return summaryList;
+    }
+
 }

@@ -418,23 +418,33 @@ angular.module('docs',
         }
       }
     }).state('guestRegister', {
-    url: '/guest-register',
-    views: {
-      'page': {
-        templateUrl: 'partial/user/guest-register.html',
-        controller: 'GuestRegisterCtrl'
-      }
-    }
-  })
-      .state('userRequestList', {
-        url: '/admin/user-requests',
-        views: {
-          'page': {
-            templateUrl: 'partial/user/user-request-list.html',
-            controller: 'UserRequestListCtrl'
-          }
+      url: '/guest-register',
+      views: {
+        'page': {
+          templateUrl: 'partial/user/guest-register.html',
+          controller: 'GuestRegisterCtrl'
         }
-      });
+      }
+    })
+    .state('userRequestList', {
+      url: '/admin/user-requests',
+      views: {
+        'page': {
+          templateUrl: 'partial/user/user-request-list.html',
+          controller: 'UserRequestListCtrl'
+        }
+      }
+    })
+    .state('userDashboard', {
+      url: '/admin/dashboard',
+      views: {
+        'page': {
+          templateUrl: 'partial/admin/admin-user-dashboard.html',
+          controller: 'UserDashboardCtrl'
+        }
+      }
+    });
+    
 
   // Configuring Restangular
   RestangularProvider.setBaseUrl('../api');
