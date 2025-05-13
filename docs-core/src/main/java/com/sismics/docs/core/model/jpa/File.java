@@ -4,7 +4,7 @@ import com.google.common.base.MoreObjects;
 import com.google.common.base.Strings;
 import com.sismics.util.mime.MimeTypeUtil;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import java.util.Date;
 
 /**

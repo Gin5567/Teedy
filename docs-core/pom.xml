@@ -15,10 +15,10 @@
   <name>Docs Core</name>
 
   <dependencies>
-    <!-- Persistence layer dependencies -->
     <dependency>
-      <groupId>org.hibernate.orm</groupId>
+      <groupId>org.hibernate</groupId>
       <artifactId>hibernate-core</artifactId>
+      <version>5.6.15.Final</version>
     </dependency>
 
     <!-- Other external dependencies -->
@@ -53,9 +53,16 @@
     </dependency>
 
     <dependency>
-      <groupId>jakarta.json</groupId>
-      <artifactId>jakarta.json-api</artifactId>
+      <groupId>javax.json</groupId>
+      <artifactId>javax.json-api</artifactId>
+      <version>1.1.4</version>
     </dependency>
+    <dependency>
+      <groupId>javax.persistence</groupId>
+      <artifactId>javax.persistence-api</artifactId>
+      <version>2.2</version>
+    </dependency>
+
 
     <dependency>
       <groupId>org.jsoup</groupId>

@@ -5,8 +5,8 @@ import com.sismics.util.jpa.EMF;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityTransaction;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
 
 /**
  * Database transaction utils.

@@ -19,9 +19,9 @@ import com.sismics.docs.core.util.jpa.QueryUtil;
 import com.sismics.docs.core.util.jpa.SortCriteria;
 import com.sismics.util.context.ThreadLocalContext;
 
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.NoResultException;
-import jakarta.persistence.Query;
+import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
+import javax.persistence.Query;
 import java.sql.Timestamp;
 import java.util.*;
 
@@ -68,28 +68,46 @@ public class UserDao {
      * @throws Exception e
      */
     public String create(User user, String userId) throws Exception {
+        log.info("[UserDao] Start creating user: {}", user.getUsername());
+
         // Create the user UUID
         user.setId(UUID.randomUUID().toString());
-        
+        log.info("[UserDao] Generated user ID: {}", user.getId());
+
         // Checks for user unicity
         EntityManager em = ThreadLocalContext.get().getEntityManager();
         Query q = em.createQuery("select u from User u where u.username = :username and u.deleteDate is null");
         q.setParameter("username", user.getUsername());
+
         List<?> l = q.getResultList();
+        log.info("[UserDao] Found {} existing users with username '{}'", l.size(), user.getUsername());
+
         if (l.size() > 0) {
+            log.warn("[UserDao] Username already exists, throwing exception");
             throw new Exception("AlreadyExistingUsername");
         }
-        
+
         // Create the user
         user.setCreateDate(new Date());
         user.setPassword(hashPassword(user.getPassword()));
         user.setPrivateKey(EncryptionUtil.generatePrivateKey());
+        user.setRoleId("user");
+        user.setStorageQuota(10_000_000_000L);
         user.setStorageCurrent(0L);
-        em.persist(user);
-        
+
+        try {
+            log.info("[UserDao] Persisting user: {}", user.getEmail());
+            em.persist(user);
+            log.info("[UserDao] User persisted successfully");
+        } catch (Exception e) {
+            log.error("[UserDao] Failed to persist user: {}", e.getMessage(), e);
+            throw e; // 重新抛出用于上层处理
+        }
         // Create audit log
+        log.info("[UserDao] Creating audit log for user {}", userId);
         AuditLogUtil.create(user, AuditLogType.CREATE, userId);
-        
+
+        log.info("[UserDao] User creation completed: {}", user.getId());
         return user.getId();
     }
     

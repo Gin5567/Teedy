@@ -5,8 +5,8 @@ import com.sismics.docs.core.dao.dto.DocumentMetadataDto;
 import com.sismics.docs.core.model.jpa.DocumentMetadata;
 import com.sismics.util.context.ThreadLocalContext;
 
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.Query;
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;

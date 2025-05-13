@@ -1,32 +1,35 @@
-angular.module('docs').controller('UserRequestListCtrl', function($scope, $http) {
-    $scope.requests = [];
+'use strict';
 
-    function loadRequests() {
-        $http.get('/api/userRequest/list')
-            .then(function(response) {
-                $scope.requests = response.data;
-            }, function() {
-                alert('Failed to load requests');
-            });
-    }
+angular.module('docs').controller('GuestRegisterCtrl', function($scope, $http) {
+    $scope.name = '';
+    $scope.email = '';
+    $scope.message = '';
+    $scope.success = false;
 
-    $scope.approve = function(req) {
-        $http.post('/api/userRequest/' + req.id + '/approve')
-            .then(function() {
-                req.status = 'accepted';
-            }, function() {
-                alert('Approve failed');
-            });
+    $scope.submitRequest = function() {
+        $http({
+            method: 'POST',
+            url: '../api/userRequest/submit',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            transformRequest: function(obj) {
+                const str = [];
+                for (let p in obj)
+                    str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+                return str.join("&");
+            },
+            data: {
+                name: $scope.name,
+                email: $scope.email
+            }
+        }).then(function() {
+            $scope.message = "Registration submitted!";
+            $scope.success = true;
+        }, function() {
+            $scope.message = "Failed to submit registration.";
+            $scope.success = false;
+        });
+
     };
-
-    $scope.reject = function(req) {
-        $http.post('/api/userRequest/' + req.id + '/reject')
-            .then(function() {
-                req.status = 'rejected';
-            }, function() {
-                alert('Reject failed');
-            });
-    };
-
-    loadRequests();
 });

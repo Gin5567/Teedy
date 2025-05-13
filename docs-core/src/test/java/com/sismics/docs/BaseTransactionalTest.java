@@ -13,8 +13,8 @@ import com.sismics.util.mime.MimeType;
 import org.junit.After;
 import org.junit.Before;
 
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityTransaction;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
 
 import javax.crypto.Cipher;
 import javax.crypto.CipherInputStream;

@@ -1,11 +1,11 @@
 package com.sismics.rest.exception;
 
-import jakarta.ws.rs.WebApplicationException;
-import jakarta.ws.rs.core.Response;
+import javax.ws.rs.WebApplicationException;
+import javax.ws.rs.core.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import jakarta.json.Json;
+import javax.json.Json;
 
 /**
  * Jersey exception encapsulating an error from the client (BAD_REQUEST).

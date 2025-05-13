@@ -20,8 +20,8 @@ import org.subethamail.wiser.WiserMessage;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
-import jakarta.ws.rs.core.Application;
-import jakarta.ws.rs.core.UriBuilder;
+import javax.ws.rs.core.Application;
+import javax.ws.rs.core.UriBuilder;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.net.URI;

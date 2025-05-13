@@ -4,8 +4,8 @@ import com.sismics.docs.core.dao.UserDao;
 import com.sismics.docs.core.model.jpa.User;
 import com.sismics.util.context.ThreadLocalContext;
 import com.sismics.util.jpa.EMF;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityTransaction;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
 import org.junit.After;
 import org.junit.Before;
 

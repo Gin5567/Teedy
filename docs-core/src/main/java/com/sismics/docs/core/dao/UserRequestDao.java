@@ -3,9 +3,9 @@ package com.sismics.docs.core.dao;
 import com.sismics.docs.core.model.jpa.UserRequest;
 import com.sismics.util.context.ThreadLocalContext;
 
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.NoResultException;
-import jakarta.persistence.Query;
+import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
+import javax.persistence.Query;
 
 import java.util.Date;
 import java.util.List;
@@ -25,14 +25,17 @@ public class UserRequestDao {
     public String create(UserRequest request) {
         EntityManager em = ThreadLocalContext.get().getEntityManager();
 
-        request.setId(UUID.randomUUID().toString());
-        request.setCreateDate(new Date());
-        request.setStatus("pending");
+        if (request.getId() == null) {
+            request.setId(UUID.randomUUID().toString());
+        }
 
+        System.out.println("[DAO] Persisting request with ID: " + request.getId());
         em.persist(request);
 
         return request.getId();
     }
+
+
 
     /**
      * Get all pending requests (status = "pending").

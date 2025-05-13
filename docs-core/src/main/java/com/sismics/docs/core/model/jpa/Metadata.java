@@ -3,7 +3,7 @@ package com.sismics.docs.core.model.jpa;
 import com.google.common.base.MoreObjects;
 import com.sismics.docs.core.constant.MetadataType;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import java.util.Date;
 
 /**

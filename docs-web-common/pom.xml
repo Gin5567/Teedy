@@ -22,10 +22,6 @@
     </dependency>
     
     <!-- Dependencies to Jersey -->
-    <dependency>
-      <groupId>org.glassfish.jersey.containers</groupId>
-      <artifactId>jersey-container-servlet</artifactId>
-    </dependency>
 
     <dependency>
       <groupId>org.glassfish.jersey.media</groupId>
@@ -52,13 +48,21 @@
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
     </dependency>
-  
+
+
+
     <dependency>
-      <groupId>jakarta.servlet</groupId>
-      <artifactId>jakarta.servlet-api</artifactId>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
       <scope>provided</scope>
     </dependency>
 
+    <dependency>
+      <groupId>javax.ws.rs</groupId>
+      <artifactId>javax.ws.rs-api</artifactId>
+      <version>2.1.1</version>
+    </dependency>
     <dependency>
       <groupId>joda-time</groupId>
       <artifactId>joda-time</artifactId>
@@ -82,21 +86,45 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- Jersey Test Framework (javax 体系，版本必须固定为 2.26) -->
     <dependency>
-      <groupId>org.glassfish.jersey.test-framework.providers</groupId>
-      <artifactId>jersey-test-framework-provider-external</artifactId>
+      <groupId>org.glassfish.jersey.test-framework</groupId>
+      <artifactId>jersey-test-framework-core</artifactId>
+      <version>2.39</version>
       <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.glassfish.jersey.containers</groupId>
+      <artifactId>jersey-container-servlet</artifactId>
+      <version>2.39</version>
     </dependency>
 
     <dependency>
       <groupId>org.glassfish.jersey.test-framework.providers</groupId>
       <artifactId>jersey-test-framework-provider-grizzly2</artifactId>
+      <version>2.39</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.glassfish.jersey.test-framework.providers</groupId>
+      <artifactId>jersey-test-framework-provider-external</artifactId>
+      <version>2.39</version>
       <scope>test</scope>
     </dependency>
 
     <dependency>
       <groupId>org.glassfish.jersey.containers</groupId>
       <artifactId>jersey-container-grizzly2-servlet</artifactId>
+      <version>2.39</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.glassfish.jersey.media</groupId>
+      <artifactId>jersey-media-multipart</artifactId>
+      <version>2.39</version>
       <scope>test</scope>
     </dependency>
 
@@ -106,11 +134,6 @@
       <scope>test</scope>
     </dependency>
 
-    <dependency>
-      <groupId>org.glassfish.jersey.media</groupId>
-      <artifactId>jersey-media-multipart</artifactId>
-      <scope>test</scope>
-    </dependency>
 
   </dependencies>
   

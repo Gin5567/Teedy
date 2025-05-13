@@ -1,11 +1,13 @@
 package com.sismics.docs.rest.resource;
 
+
+import com.sismics.docs.core.dao.dto.UserRequestDto;
 import com.sismics.docs.core.model.jpa.UserRequest;
 import com.sismics.docs.core.service.UserRequestService;
 
-import jakarta.ws.rs.*;
-import jakarta.ws.rs.core.MediaType;
-import jakarta.ws.rs.core.Response;
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 import java.util.HashMap;
 import java.util.List;
@@ -19,17 +21,12 @@ public class UserRequestResource {
 
     private final UserRequestService service = new UserRequestService();
 
-    /**
-     * Guest sends a registration request.
-     */
     @POST
     @Path("/submit")
-    @Consumes(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response submitRequest(Map<String, String> payload) {
-        String name = payload.get("name");
-        String email = payload.get("email");
-
+    public Response submitRequest(@FormParam("name") String name,
+                                  @FormParam("email") String email) {
         if (name == null || email == null) {
             return Response.status(Response.Status.BAD_REQUEST)
                     .entity("Missing name or email").build();
@@ -58,9 +55,9 @@ public class UserRequestResource {
      */
     @POST
     @Path("/{id}/approve")
-    public Response approveRequest(@PathParam("id") String requestId, @HeaderParam("X-User-Id") String adminUserId) {
+    public Response approveRequest(@PathParam("id") String requestId) {
         try {
-            service.approveRequest(requestId, adminUserId);
+            service.approveRequest(requestId);
             return Response.ok().build();
         } catch (Exception e) {
             return Response.status(Response.Status.NOT_FOUND)
@@ -76,5 +73,13 @@ public class UserRequestResource {
     public Response rejectRequest(@PathParam("id") String requestId) {
         service.rejectRequest(requestId);
         return Response.ok().build();
+    }
+
+
+    @GET
+    @Path("/ping")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String ping() {
+        return "pong";
     }
 }

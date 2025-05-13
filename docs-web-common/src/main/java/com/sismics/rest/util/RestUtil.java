@@ -6,8 +6,8 @@ import com.sismics.docs.core.util.FileUtil;
 import com.sismics.rest.exception.ServerException;
 import com.sismics.util.JsonUtil;
 
-import jakarta.json.Json;
-import jakarta.json.JsonObjectBuilder;
+import javax.json.Json;
+import javax.json.JsonObjectBuilder;
 
 import java.io.IOException;
 import java.nio.file.Files;

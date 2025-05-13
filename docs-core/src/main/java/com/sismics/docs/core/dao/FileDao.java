@@ -4,10 +4,10 @@ import com.sismics.docs.core.constant.AuditLogType;
 import com.sismics.docs.core.model.jpa.File;
 import com.sismics.docs.core.util.AuditLogUtil;
 import com.sismics.util.context.ThreadLocalContext;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.NoResultException;
-import jakarta.persistence.Query;
-import jakarta.persistence.TypedQuery;
+import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
+import javax.persistence.Query;
+import javax.persistence.TypedQuery;
 
 import java.util.Collections;
 import java.util.Date;
